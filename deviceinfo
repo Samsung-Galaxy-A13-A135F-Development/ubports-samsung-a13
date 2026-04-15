@@ -1,0 +1,47 @@
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+# Deviceinfo for Samsung Galaxy A13 4G
+# device info
+deviceinfo_name="Samsung Galaxy A13 4G"
+deviceinfo_manufacturer="Samsung"
+deviceinfo_codename="a13"
+deviceinfo_arch="aarch64"
+
+# Bootloader
+deviceinfo_generate_bootimg="true"
+deviceinfo_flash_pagesize="2048"
+deviceinfo_header_version="2"
+deviceinfo_flash_offset_dtb="0x00000000"
+deviceinfo_flash_offset_base="0x10000000"
+deviceinfo_flash_offset_kernel="0x00008000"
+deviceinfo_flash_offset_ramdisk="0x01000000"
+deviceinfo_flash_offset_second="0xf0000000"
+deviceinfo_flash_offset_tags="0x00000100"
+deviceinfo_bootimg_qcdt="false"
+
+# Halium/OS versions
+deviceinfo_halium_version="13"
+deviceinfo_bootimg_header_version="2"
+deviceinfo_bootimg_partition_size="37748736"
+deviceinfo_bootimg_os_patch_level="2023-05"
+
+# Rootfs
+deviceinfo_rootfs_image_sector_size="4096"
+
+# DTB
+deviceinfo_dtb_custom0="0x00000000"
+deviceinfo_dtb_custom1="0xff000000"
+deviceinfo_bootimg_prebuilt_dtb="a13.dtb"
+deviceinfo_dtb_has_dt_table="true"
+
+# Kernel
+deviceinfo_kernel_cmdline="androidboot.selinux=permissive loop.max_part=7"
+deviceinfo_kernel_clang_compile="true"
+deviceinfo_kernel_llvm_compile="true"
+deviceinfo_kernel_image_name="Image"
+deviceinfo_ramdisk_compression="lz4"
+deviceinfo_kernel_source="https://github.com/Samsung-Galaxy-A13-A135F-Development/linux-android-samsung-a13.git"
+deviceinfo_kernel_source_branch="master"
+deviceinfo_kernel_defconfig="exynos850-a13nsxx_defconfig"
